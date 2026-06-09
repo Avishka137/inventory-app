@@ -1,0 +1,72 @@
+{
+  "action": "ADDED",
+  "item": {
+    "id": 224,
+    "name": "Laptop HP",
+    "category": "Electronic",
+    "quantity": 1,
+    "price": 114.0,
+    "description": "Sl111"
+  },
+  "all_items": [
+    {
+      "id": 1,
+      "name": "Etonic Kettle",
+      "category": "Electronics",
+      "quantity": 1,
+      "price": 5.25,
+      "description": "electronic modern"
+    },
+    {
+      "id": 223,
+      "name": "Headset XXV",
+      "category": "Office Supplies",
+      "quantity": 1,
+      "price": 3.25,
+      "description": "India's no 1"
+    },
+    {
+      "id": 114,
+      "name": "Keyboard",
+      "category": "electronic",
+      "quantity": 1,
+      "price": 3.0,
+      "description": "normal one"
+    },
+    {
+      "id": 224,
+      "name": "Laptop HP",
+      "category": "Electronic",
+      "quantity": 1,
+      "price": 114.0,
+      "description": "Sl111"
+    },
+    {
+      "id": 129,
+      "name": "Marker Pen",
+      "category": "Office Supplies",
+      "quantity": 1,
+      "price": 0.25,
+      "description": "Sri Lankan Product"
+    },
+    {
+      "id": 67,
+      "name": "Smart Board",
+      "category": "electronic",
+      "quantity": 1,
+      "price": 50.0,
+      "description": "chinese"
+    },
+    {
+      "id": 27,
+      "name": "Wireless Mouse",
+      "category": "Electronics",
+      "quantity": 4,
+      "price": 14.5,
+      "description": ""
+    }
+  ],
+  "total_qty": 10,
+  "total_price": 233.75,
+  "timestamp": "2026-06-09 12:53:46"
+}
