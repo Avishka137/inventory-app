@@ -320,4 +320,4 @@ function formatMessage(text) {
 .icon-flip-enter-active { animation: flipIn .25s ease; }
 .icon-flip-leave-active { animation: flipIn .2s ease reverse; position: absolute; }
 @keyframes flipIn { from { transform: rotate(-90deg) scale(.5); opacity:0; } to { transform: rotate(0) scale(1); opacity:1; } }
-</style>
+</style>  ``
