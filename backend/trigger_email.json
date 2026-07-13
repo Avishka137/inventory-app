@@ -1,12 +1,12 @@
 {
-  "action": "ADDED",
+  "action": "REMOVED",
   "item": {
-    "id": 224,
-    "name": "Laptop HP",
-    "category": "Electronic",
+    "id": 225,
+    "name": "Mobile phone",
+    "category": "electronic",
     "quantity": 1,
-    "price": 114.0,
-    "description": "Sl111"
+    "price": 44.0,
+    "description": "abc"
   },
   "all_items": [
     {
@@ -50,23 +50,15 @@
       "description": "Sri Lankan Product"
     },
     {
-      "id": 67,
-      "name": "Smart Board",
+      "id": 227,
+      "name": "Mobile phone",
       "category": "electronic",
       "quantity": 1,
-      "price": 50.0,
-      "description": "chinese"
-    },
-    {
-      "id": 27,
-      "name": "Wireless Mouse",
-      "category": "Electronics",
-      "quantity": 4,
-      "price": 14.5,
-      "description": ""
+      "price": 44.0,
+      "description": "abc"
     }
   ],
-  "total_qty": 10,
-  "total_price": 233.75,
-  "timestamp": "2026-06-09 12:53:46"
+  "total_qty": 6,
+  "total_price": 169.75,
+  "timestamp": "2026-07-13 13:49:50"
 }
