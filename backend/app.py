@@ -35,9 +35,9 @@ CORS(app)
 DB_PATH = os.path.join(os.path.dirname(__file__), "inventory.db")
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 
-GMAIL_USER     = os.environ.get("GMAIL_USER")
-GMAIL_PASSWORD = os.environ.get("GMAIL_PASSWORD")
-NOTIFY_TO      = os.environ.get("NOTIFY_TO", GMAIL_USER)
+GMAIL_USER     = os.environ.get("")
+GMAIL_PASSWORD = os.environ.get("")
+NOTIFY_TO      = os.environ.get("NOTIFY_TO", "")
 EXCEL_FILE     = os.path.join(os.path.dirname(__file__), "inventory.xlsx")
 TRIGGER_FILE   = os.path.join(os.path.dirname(__file__), "trigger_email.json")
 
@@ -438,8 +438,9 @@ Current inventory:
 
     return jsonify({"reply": reply, "knowledge_updated": knowledge_updated})
 
+init_db()
+
 if __name__ == "__main__":
-    init_db()
     print("✅  Database ready.")
     print("🚀  Flask running at http://localhost:5000")
     print(f"📁  Trigger file location: {TRIGGER_FILE}")
