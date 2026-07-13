@@ -173,7 +173,7 @@ const showForm        = ref(false);
 const editingProduct  = ref(null);
 const deletingProduct = ref(null);
 const toasts          = ref([]);
-const API = "http://localhost:5000/api";
+const API = "https://avishka137.pythonanywhere.com/api";
 
 const categories = computed(() => [...new Set(products.value.map(p => p.category))]);
 const filtered   = computed(() => {
