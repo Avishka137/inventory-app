@@ -1,3 +1,5 @@
+from dotenv import load_dotenv
+load_dotenv()
 from flask import Flask, request, jsonify
 try:
     from flask_cors import CORS
@@ -25,15 +27,18 @@ except ImportError:
     GEMINI_AVAILABLE = False
     print("⚠️  google-genai not installed. Run: pip install google-genai")
 
+from dotenv import load_dotenv
+load_dotenv()
+
 app = Flask(__name__)
 CORS(app)
 DB_PATH = os.path.join(os.path.dirname(__file__), "inventory.db")
-GEMINI_API_KEY = "AIzaSyB44AS5MXOd2in2LaMbx0NIttiD0TvNsbI"
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 
-GMAIL_USER     = "avishka.inspiredlk@gmail.com"
-GMAIL_PASSWORD = "rbxo uhzm hwif mvex"
-NOTIFY_TO      = "avishka.inspiredlk@gmail.com"
-EXCEL_FILE     = r"C:\Users\VICTUS\Desktop\inventory-app\inventory.xlsx"
+GMAIL_USER     = os.environ.get("GMAIL_USER")
+GMAIL_PASSWORD = os.environ.get("GMAIL_PASSWORD")
+NOTIFY_TO      = os.environ.get("NOTIFY_TO", GMAIL_USER)
+EXCEL_FILE     = os.path.join(os.path.dirname(__file__), "inventory.xlsx")
 TRIGGER_FILE   = os.path.join(os.path.dirname(__file__), "trigger_email.json")
 
 def get_db():
